@@ -37,6 +37,9 @@
             
             // 問題を表示する
             function showQuestion() {
+                const rootVh = window.innerHeight;
+                document.body.style.height=rootVh+'px';
+
                 if (no < wordList.length) {
                     // 次の問題がある場合は、表示する
                     document.getElementById("question").innerHTML = wordList[no].japanese
