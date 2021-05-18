@@ -37,8 +37,9 @@
             
             // 問題を表示する
             function showQuestion() {
-                const rootVh = window.innerHeight;
-                document.body.style.height=rootVh+'px';
+                // const vh=window.innerHeight;
+                // console.log(vh);
+                // document.getElementById('root').style.height = vh + 'px';
 
                 if (no < wordList.length) {
                     // 次の問題がある場合は、表示する
@@ -80,7 +81,7 @@
             }
         </script>
     </head>
-    <body onload="showQuestion()">
+    <body id="root" onload="showQuestion()">
         <h1 id="title">Question</h1>
         <div id="question"></div>
         <div id="answerForm">
